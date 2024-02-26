@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- SCRIPTS -->
+    <script src="js/script.js" defer></script>
+    <!-- LOGO -->
+    <link rel="icon" href="img/logo.svg" type="image/x-icon">
     <title>Encriptador de texto</title>
 </head>
 <body>
+    <main class="container">
+        <img src="img/logo.svg" alt="">
+        <section class="input-output">
+            <div class="input center">
+                <textarea id="input" placeholder="Escribe o pega el texto que quieres encriptar"></textarea>
+                <div class="btns">
+                    <button id="btn-encrypt" class="btn">Encriptar</button>
+                    <button id="btn-decrypt" class="btn btn-transparent">Desencriptar</button>
+                </div>
+            </div>
+            <div class="output center">
+                <textarea id="output" placeholder="Texto encriptado" readonly></textarea>
+                <button id="btn-copy" class="btn btn-transparent">Copiar</button>
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>
